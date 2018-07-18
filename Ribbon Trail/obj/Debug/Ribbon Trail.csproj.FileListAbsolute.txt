@@ -1,0 +1,14 @@
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\bin\Debug\Ribbon Trail.exe.config
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\bin\Debug\Ribbon Trail.exe
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\bin\Debug\Ribbon Trail.pdb
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail.csprojResolveAssemblyReference.cache
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\MainWindow.g.cs
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\App.g.cs
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail_MarkupCompile.cache
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail_MarkupCompile.lref
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\MainWindow.baml
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail.g.resources
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon_Trail.Properties.Resources.resources
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail.csproj.GenerateResource.Cache
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail.exe
+e:\documents\visual studio 2017\Projects\Ribbon Trail\Ribbon Trail\obj\Debug\Ribbon Trail.pdb
