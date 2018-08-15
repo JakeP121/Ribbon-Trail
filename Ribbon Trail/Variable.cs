@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Ribbon_Trail
 {
-    class Method
+    class Variable
     {
         public string name;
-        public List<Method> parents = new List<Method>();
-        public List<Method> children = new List<Method>();
+        public string type;
 
-        public Method(string name)
+        public Variable(string name, string type)
         {
             this.name = name;
+            this.type = type;
         }
     }
 }

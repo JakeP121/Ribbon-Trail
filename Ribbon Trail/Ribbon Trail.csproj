@@ -55,7 +55,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Method.cs" />
+    <Compile Include="FileScan.cs" />
+    <Compile Include="Objects\Class.cs" />
+    <Compile Include="Objects\Method.cs" />
+    <Compile Include="Objects\Namespace.cs" />
+    <Compile Include="Objects\Variable.cs" />
     <Compile Include="RibbonTrail.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

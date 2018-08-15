@@ -1,0 +1,818 @@
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>Economy</NAME>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>buy
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>sell
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getBuyPrice
+			<RETURNS>int</RETURNS>
+		</METHOD>
+		<METHOD>getSellPrice
+			<RETURNS>int</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>Game</NAME>
+		<METHOD>Start
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>toggleCommandMode
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getPlayers
+			<RETURNS>List<GameObject></RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>StratObject</NAME>
+		<METHOD>StratObject
+			<RETURNS>public</RETURNS>
+		</METHOD>
+		<METHOD>drawUI
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>StratTerrain</NAME>
+		<METHOD>OnMouseDown
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>Building</NAME>
+		<METHOD>Building
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>Town</NAME>
+		<METHOD>Town
+			<RETURNS>public</RETURNS>
+		</METHOD>
+		<METHOD>OnMouseDown
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>Update
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>spawnUnit
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>drawUI
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>newCitizen
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>CameraController</NAME>
+		<METHOD>Start
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>Update
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>PlayerCheats</NAME>
+		<METHOD>Start
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>give
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>give
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat</NAMESPACE>
+	<NAME>PlayerController</NAME>
+		<METHOD>
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>initResources
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>initTechnology
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>Update
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>limitResources
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>setSelectedObject
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getSelectedObject
+			<RETURNS>StratObject</RETURNS>
+		</METHOD>
+		<METHOD>deselectObject
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>canAfford
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>buy
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>getGathererCount
+			<RETURNS>int</RETURNS>
+		</METHOD>
+		<METHOD>getMaximumGatherers
+			<RETURNS>int</RETURNS>
+		</METHOD>
+		<METHOD>newBuilding
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>newBuilding
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getAge
+			<RETURNS>Research.Age.AbstractAge</RETURNS>
+		</METHOD>
+		<METHOD>advanceAge
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>getTechnology
+			<RETURNS>Research.AbstractTechnology</RETURNS>
+		</METHOD>
+		<METHOD>researchTechnology
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research</NAMESPACE>
+	<NAME>AbstractTechnology</NAME>
+		<METHOD>AbstractTechnology
+			<RETURNS>public</RETURNS>
+		</METHOD>
+		<METHOD>getName
+			<RETURNS>string</RETURNS>
+		</METHOD>
+		<METHOD>getTechType
+			<RETURNS>TECHNOLOGY</RETURNS>
+		</METHOD>
+		<METHOD>getCost
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>getNextTechnology
+			<RETURNS>AbstractTechnology</RETURNS>
+		</METHOD>
+		<METHOD>getIcon
+			<RETURNS>Sprite</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>AbstractAge</NAME>
+		<METHOD>AbstractAge
+			<RETURNS>public</RETURNS>
+		</METHOD>
+		<METHOD>getNextAge
+			<RETURNS>AbstractAge</RETURNS>
+		</METHOD>
+		<METHOD>getName
+			<RETURNS>string</RETURNS>
+		</METHOD>
+		<METHOD>getCost
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>getResearchRequirements
+			<RETURNS>int</RETURNS>
+		</METHOD>
+		<METHOD>getIcon
+			<RETURNS>Sprite</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Ancient</NAME>
+		<METHOD>Ancient
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Classical</NAME>
+		<METHOD>Classical
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Enlightenment</NAME>
+		<METHOD>Enlightenment
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Gunpowder</NAME>
+		<METHOD>Gunpowder
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Industrial</NAME>
+		<METHOD>Industrial
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Information</NAME>
+		<METHOD>Information
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Medieval</NAME>
+		<METHOD>Medieval
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Age</NAMESPACE>
+	<NAME>Modern</NAME>
+		<METHOD>Modern
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>CityState</NAME>
+		<METHOD>CityState
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>Constitution</NAME>
+		<METHOD>Constitution
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>Default</NAME>
+		<METHOD>Default
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>DivineRight</NAME>
+		<METHOD>DivineRight
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>Empire</NAME>
+		<METHOD>Empire
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>Feudalism</NAME>
+		<METHOD>Feudalism
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>GreatPower</NAME>
+		<METHOD>GreatPower
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Civic</NAMESPACE>
+	<NAME>InternationalLaw</NAME>
+		<METHOD>InternationalLaw
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>AssemblyLine</NAME>
+		<METHOD>AssemblyLine
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Barter</NAME>
+		<METHOD>Barter
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Coinage</NAME>
+		<METHOD>Coinage
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Default</NAME>
+		<METHOD>Default
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Finance</NAME>
+		<METHOD>Finance
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Globalization</NAME>
+		<METHOD>Globalization
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Mercantilism</NAME>
+		<METHOD>Mercantilism
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Commerce</NAMESPACE>
+	<NAME>Trade</NAME>
+		<METHOD>Trade
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>Conscription</NAME>
+		<METHOD>Conscription
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>Default</NAME>
+		<METHOD>Default
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>LeveeEnMasse</NAME>
+		<METHOD>LeveeEnMasse
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>Mercenaries</NAME>
+		<METHOD>Mercenaries
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>NationInArms</NAME>
+		<METHOD>NationInArms
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>SelectiveService</NAME>
+		<METHOD>SelectiveService
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>StandingArmy</NAME>
+		<METHOD>StandingArmy
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Military</NAMESPACE>
+	<NAME>TheArtOfWar</NAME>
+		<METHOD>TheArtOfWar
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Chemistry</NAME>
+		<METHOD>Chemistry
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Computerization</NAME>
+		<METHOD>Computerization
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Default</NAME>
+		<METHOD>Default
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Electricity</NAME>
+		<METHOD>Electricity
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Electronics</NAME>
+		<METHOD>Electronics
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>LawsOfNature</NAME>
+		<METHOD>LawsOfNature
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>Mathematics</NAME>
+		<METHOD>Mathematics
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Research.Science</NAMESPACE>
+	<NAME>WrittenWord</NAME>
+		<METHOD>WrittenWord
+			<RETURNS>public</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>GameUI</NAME>
+		<METHOD>
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>UIPanel>
+			<RETURNS>Dictionary<PANEL,</RETURNS>
+		</METHOD>
+		<METHOD>createPanels
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>Update
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionPanels
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>drawObjectUI
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>deselect
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getPlayer
+			<RETURNS>PlayerController</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>AgePanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>Dictionary<TECHNOLOGY,</RETURNS>
+		</METHOD>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>advanceAge
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>researchTechnology
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>CentrePanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>Dictionary<BUTTON,</RETURNS>
+		</METHOD>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>military_onClick
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>options_onClick
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>objectives_onClick
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>citizen_onClick
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>CommandPanel</NAME>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>reset
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>InfoPanel</NAME>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>MiscPanel</NAME>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>ResourcesPanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>Dictionary<COLUMN,</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI</NAMESPACE>
+	<NAME>UIPanel</NAME>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>setPosition
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI.ResourcesChildPanel</NAMESPACE>
+	<NAME>AbstractPanel</NAME>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI.ResourcesChildPanel</NAMESPACE>
+	<NAME>MarketPanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>TRADE>,</RETURNS>
+		</METHOD>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>buy
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>sell
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>updatePrices
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI.ResourcesChildPanel</NAMESPACE>
+	<NAME>StockPanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>Dictionary<RESOURCE,</RETURNS>
+		</METHOD>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>updateValues
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.UI.ResourcesChildPanel</NAMESPACE>
+	<NAME>WorkerPanel</NAME>
+		<METHOD>GameObject>
+			<RETURNS>Dictionary<RESOURCE,</RETURNS>
+		</METHOD>
+		<METHOD>init
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>updateValues
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Units</NAMESPACE>
+	<NAME>Citizen</NAME>
+		<METHOD>Citizen
+			<RETURNS></RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Units</NAMESPACE>
+	<NAME>Unit</NAME>
+		<METHOD>Unit
+			<RETURNS>public</RETURNS>
+		</METHOD>
+		<METHOD>die
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Utilities</NAMESPACE>
+	<NAME>CommandPrompt</NAME>
+		<METHOD>Awake
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>toggle
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>open
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>close
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>setPlayerUI
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>isActive
+			<RETURNS>bool</RETURNS>
+		</METHOD>
+		<METHOD>Update
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>positionElements
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>handleCommand
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>getParameters
+			<RETURNS></RETURNS>
+		</METHOD>
+		<METHOD>returnMessage
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>initCommands
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>
+			<RETURNS></RETURNS>
+		</METHOD>
+</CLASS>
+
+<CLASS>
+	<NAMESPACE>Strat.Utilities</NAMESPACE>
+	<NAME>Config</NAME>
+		<METHOD>Config
+			<RETURNS>static</RETURNS>
+		</METHOD>
+		<METHOD>setDefaultValues
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>createFile
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>readFile
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>assignVariables
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>writeLine
+			<RETURNS>void</RETURNS>
+		</METHOD>
+		<METHOD>writeParagraph
+			<RETURNS>void</RETURNS>
+		</METHOD>
+</CLASS>
+
